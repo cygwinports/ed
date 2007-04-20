@@ -1,0 +1,69 @@
+ed
+------------------------------------------
+`ed' is a line-oriented text editor. It is used to create, display, 
+modify and otherwise manipulate text files, both interactively and via 
+shell scripts. A restricted version of `ed', `red', can only edit files 
+in the current directory and cannot execute shell commands. `ed' is the 
+`standard' text editor in the sense that it is the original editor for 
+Unix, and thus widely available. For most purposes, however, it is 
+superseded by full-screen editors such as Emacs.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnu.org/software/ed/
+
+Canonical download:
+  http://ftp.gnu.org/gnu/ed/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ed-0.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ed-0.5-X.cygport all
+
+This will create:
+  /usr/src/ed-0.5-X-src.tar.bz2
+  /usr/src/ed-0.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/ed.sh
+  /usr/bin/ed.exe
+  /usr/bin/red.exe
+  /usr/share/doc/Cygwin/ed-0.5.README
+  /usr/share/doc/ed-0.5/AUTHORS
+  /usr/share/doc/ed-0.5/COPYING
+  /usr/share/doc/ed-0.5/ChangeLog
+  /usr/share/doc/ed-0.5/INSTALL
+  /usr/share/doc/ed-0.5/NEWS
+  /usr/share/doc/ed-0.5/README
+  /usr/share/doc/ed-0.5/TODO
+  /usr/share/info/ed.info.gz
+  /usr/share/man/man1/ed.1.gz
+  /usr/share/man/man1/red.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.5-1 -----
+Version bump; last release was 0.2-1.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
