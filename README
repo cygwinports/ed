@@ -28,15 +28,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ed-0.5-X-src.tar.bz2
+  unpack ed-0.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ed-0.5-X.cygport all
+  cygport ./ed-0.6-X.cygport all
 
 This will create:
-  /usr/src/ed-0.5-X-src.tar.bz2
-  /usr/src/ed-0.5-X.tar.bz2
+  /usr/src/ed-0.6-X-src.tar.bz2
+  /usr/src/ed-0.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -45,14 +45,14 @@ Files included in the binary package:
   /etc/postinstall/ed.sh
   /usr/bin/ed.exe
   /usr/bin/red.exe
-  /usr/share/doc/Cygwin/ed-0.5.README
-  /usr/share/doc/ed-0.5/AUTHORS
-  /usr/share/doc/ed-0.5/COPYING
-  /usr/share/doc/ed-0.5/ChangeLog
-  /usr/share/doc/ed-0.5/INSTALL
-  /usr/share/doc/ed-0.5/NEWS
-  /usr/share/doc/ed-0.5/README
-  /usr/share/doc/ed-0.5/TODO
+  /usr/share/doc/Cygwin/ed-0.6.README
+  /usr/share/doc/ed-0.6/AUTHORS
+  /usr/share/doc/ed-0.6/COPYING
+  /usr/share/doc/ed-0.6/ChangeLog
+  /usr/share/doc/ed-0.6/INSTALL
+  /usr/share/doc/ed-0.6/NEWS
+  /usr/share/doc/ed-0.6/README
+  /usr/share/doc/ed-0.6/TODO
   /usr/share/info/ed.info.gz
   /usr/share/man/man1/ed.1.gz
   /usr/share/man/man1/red.1.gz
@@ -60,6 +60,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.6-1 -----
+Version bump.
 
 ----- version 0.5-1 -----
 Version bump; last release was 0.2-1.
