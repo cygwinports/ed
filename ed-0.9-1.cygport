@@ -1,0 +1,19 @@
+
+
+SRC_URI="mirror://gnu/ed/${P}.tar.bz2
+		 mirror://gnu/ed/${P}.tar.bz2.sig"
+
+src_compile() {
+	# not autotool-based, but takes autoconf args
+	cd ${B}
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall install-man
+
+	rm -f ${D}/usr/bin/red.exe
+	dosym ed.exe /usr/bin/red
+}
