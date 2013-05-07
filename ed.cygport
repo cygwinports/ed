@@ -1,0 +1,22 @@
+NAME="ed"
+VERSION=1.8
+RELEASE=1
+CATEGORY="Editors"
+SUMMARY="GNU line-oriented text editor"
+DESCRIPTION="ed is a line-oriented text editor. It is used to create, display,
+modify and otherwise manipulate text files, both interactively and via shell
+scripts. A restricted version of ed, red, can only edit files in the current
+directory and cannot execute shell commands. ed is the 'standard' text editor
+in the sense that it is the original editor for Unix, and thus widely
+available. For most purposes, however, it is superseded by full-screen editors
+such as Emacs."
+HOMEPAGE="http://www.gnu.org/software/ed/"
+SRC_URI="mirror://gnu/ed/ed-${VERSION}.tar.gz
+	 mirror://gnu/ed/ed-${VERSION}.tar.gz.sig"
+
+src_compile() {
+	# not autotool-based, but takes autoconf args
+	cd ${B}
+	cygconf
+	cygmake CFLAGS="${CFLAGS}"
+}
